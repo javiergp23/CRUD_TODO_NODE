@@ -11,8 +11,8 @@ export const register = async (req, res) => {
             password
         })
 
-        await newUser.save()
-        res.send('registrando')
+        const userSaved = await newUser.save()
+        res.json(userSaved)
     }catch(err){
         res.status(400).send(err)
     }
