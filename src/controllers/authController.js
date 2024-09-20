@@ -2,23 +2,21 @@ import userModel from "../models/userModel.js"
 
 export const register = async (req, res) => {
 
-    //add controler para registrar usuarios
-    
-
-    // const {email, username, password} = req.body  
+    const {email, username, password} = req.body  
    
-    // try{
-    //     const newUser = new User({
-    //         username,
-    //         email,
-    //         password
-    //     })
-    //     await newUser.save()
-    //     res.send('registrando')
-    // }catch(err){
-    //     res.status(400).send(err)
-    // }
-    console.log(req.body)
+    try{
+        const newUser = new User({
+            username,
+            email,
+            password
+        })
+
+        await newUser.save()
+        res.send('registrando')
+    }catch(err){
+        res.status(400).send(err)
+    }
 }
+
 
 export const login = (req, res) => res.send('login')
