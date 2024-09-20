@@ -8,4 +8,4 @@ app.use(morgan('dev'))
 app.use(express.json());
 app.use("/api",authRoutes)
 
-export default app
+export default app;

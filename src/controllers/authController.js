@@ -1,4 +1,4 @@
-import userModel from "../models/userModel.js"
+import User from "../models/userModel.js"
 
 export const register = async (req, res) => {
 
@@ -17,6 +17,5 @@ export const register = async (req, res) => {
         res.status(400).send(err)
     }
 }
-
 
 export const login = (req, res) => res.send('login')
