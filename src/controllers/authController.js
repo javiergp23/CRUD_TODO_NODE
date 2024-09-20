@@ -1,6 +1,10 @@
 import userModel from "../models/userModel.js"
 
 export const register = async (req, res) => {
+
+    //add controler para registrar usuarios
+    
+
     // const {email, username, password} = req.body  
    
     // try{
