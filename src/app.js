@@ -1,4 +1,8 @@
-import express from 'express'
+import express from 'express';
+import morgan from 'morgan';
 
-export const app = express()
+const app = express()
 
+app.use(morgan('dev'))
+
+export default app
