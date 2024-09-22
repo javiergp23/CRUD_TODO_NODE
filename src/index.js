@@ -2,7 +2,7 @@ import app  from './app.js';
 import { connectDB } from './db.js';
 
 //Conexión a la base de datos
-connectDB()
+connectDB();
 
 //Inicio del servidor
 app.listen(3023)
