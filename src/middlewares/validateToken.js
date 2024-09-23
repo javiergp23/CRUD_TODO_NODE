@@ -1,4 +1,5 @@
 export const authRequired = (req, res, next) => {
-    console.log('validing token')
+    const cookies = req.cookies;
+    console.log(cookies)
     next()
 }
