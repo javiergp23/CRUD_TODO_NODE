@@ -1,4 +1,5 @@
 import jwt from 'jsonwebtoken';
+// Imports creados
 import { TOKEN_SECRET } from '../config.js';
 
 export function createAccessToken(payload) {

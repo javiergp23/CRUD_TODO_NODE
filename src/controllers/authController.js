@@ -1,5 +1,6 @@
 import User from "../models/userModel.js";
 import bcrypt from 'bcryptjs';
+//imports creados
 import  { createAccessToken } from '../libs/jwt.js';
 
 export const register = async (req, res) => {
